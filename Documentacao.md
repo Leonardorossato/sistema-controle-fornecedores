@@ -36,12 +36,14 @@
 
 #Rota Post:
 Parametros para passar no corpo da resposta:
+``
 {
   "razao_Social": "LAVANDERIA SEMPRE LIMPA LTDA",
   "endereco": "Rua Bela Vista, 356, Centro, Curitiba/PR",
   "contatoNome": "João Silva",
   "contatoEmail": "joao@lavanderiasl.com.br"
 }
+``
 Caso a respota esteja correta aparecerá status 201 que o fornecedor foi criado se suas informações:
 {
   "razaoSocial": "LAVANDERIA SEMPRE LIMPA LTDA",
@@ -84,8 +86,8 @@ ou
   "contatoEmail": "joao@lavanderiasl.com.br"
 }
 - Caso digite um id que não exista:
-## Error: Internal Server Error
-## Response body
+Error: Internal Server Error
+Response body
 {
   "statusCode": 500,
   "message": "Fornecedor com este id não existe"
@@ -111,7 +113,7 @@ ou
   "message": "Não foi possivel atulizar este fornecedor"
 }
 
-#Rota para deletar o fornecedor:
+## Rota para deletar o fornecedor:
 - Parâmetro Id : número
 
 ## Caso exista fornecedor com este Id ira retornar esta mensagem:
