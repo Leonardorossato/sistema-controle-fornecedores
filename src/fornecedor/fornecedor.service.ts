@@ -16,8 +16,8 @@ export class FornecedorService {
     try {
       const fornecedor = await this.fornecedorRepository.create(dto);
       if (
-        (fornecedor.contatoNome && fornecedor.contatoEmail == null) ||
-        (fornecedor.contatoNome && fornecedor.contatoEmail == '')
+        (dto.contatoNome && dto.contatoEmail == null) ||
+        (dto.contatoNome && dto.contatoEmail == '')
       ) {
         throw new HttpException(
           'Os campos de email e nome do fornecedor não podem esta vazios ou nullo',
@@ -75,7 +75,7 @@ export class FornecedorService {
       const fornecedor = await this.fornecedorRepository.findOneBy({ id: id });
       if (!fornecedor) {
         throw new HttpException(
-          `Fornecedor com este id: ${id} não foi encontrado`,
+          `Fornecedor com este id: ${fornecedor} não foi encontrado`,
           HttpStatus.NOT_FOUND,
         );
       }
@@ -94,7 +94,7 @@ export class FornecedorService {
       const fornecedor = await this.fornecedorRepository.findOneBy({ id: id });
       if (!fornecedor) {
         throw new HttpException(
-          `Fornecedor com este id: ${fornecedor.id} não foi encontrado`,
+          `Fornecedor com este id: ${id} não foi encontrado`,
           HttpStatus.NOT_FOUND,
         );
       }
