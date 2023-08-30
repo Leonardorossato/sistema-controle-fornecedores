@@ -36,14 +36,14 @@
 
 #Rota Post:
 Parametros para passar no corpo da resposta:
-``
+
 {
   "razao_Social": "LAVANDERIA SEMPRE LIMPA LTDA",
   "endereco": "Rua Bela Vista, 356, Centro, Curitiba/PR",
   "contatoNome": "João Silva",
   "contatoEmail": "joao@lavanderiasl.com.br"
 }
-``
+
 Caso a respota esteja correta aparecerá status 201 que o fornecedor foi criado se suas informações:
 {
   "razaoSocial": "LAVANDERIA SEMPRE LIMPA LTDA",
