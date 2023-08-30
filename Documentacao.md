@@ -100,3 +100,27 @@ ou
   "contatoNome": "Ana Moraes",
   "contatoEmail": "ana@lavanderiasl.com.br"
 }
+## Caso o Id e dados do copro estiverem corretos ira aparecer uma mensagem:
+{
+  "message": "Dados do fornecedor atualizados com sucesso."
+}
+
+## Caso O Id não exista:
+{
+  "statusCode": 400,
+  "message": "Não foi possivel atulizar este fornecedor"
+}
+
+#Rota para deletar o fornecedor:
+- Parâmetro Id : número
+
+## Caso exista fornecedor com este Id ira retornar esta mensagem:
+{
+  "message": "Fornecedor removido do sistema com sucesso"
+}
+
+## Caso não exista:
+{
+  "statusCode": 400,
+  "message": "Erro ao remover este fornecedor"
+}
