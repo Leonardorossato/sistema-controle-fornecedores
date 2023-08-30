@@ -5,7 +5,7 @@ export class Fornecedor {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ nullable: false, type: 'varchar' })
+  @Column({ nullable: false, type: 'varchar', unique: true })
   razao_Social: string;
 
   @Column({ nullable: false, type: 'varchar' })
