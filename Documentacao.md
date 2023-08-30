@@ -16,7 +16,7 @@
 ## Rodando o Projeto Localmente:
 
 1 - Clonnar o repositório do projeto:
-- git clone https://github.com/Leonardorossato/desafio-backend-kafka
+- git clone [https://github.com/Leonardorossato/sistema-controle-fornecedores](https://github.com/Leonardorossato/sistema-controle-fornecedores)
 
 2- instalar as dependências:
 - Ter instalado o Node.js versão LTS: [Node.js](https://nodejs.org/en) , apos isso instalar o Nestjs: [Nest.js](https://docs.nestjs.com)
