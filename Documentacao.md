@@ -34,8 +34,8 @@
 # Funcionamento com Swagger : 
 ## Com a utilização do swagger api isso permite que possa ulizar sua api:
 
-#Rota Post:
-Parametros para passar no corpo da resposta:
+## Rota Post:
+- Parametros do corpo para passar no corpo da resposta:
 
 {
   "razao_Social": "LAVANDERIA SEMPRE LIMPA LTDA",
